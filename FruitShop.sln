@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitShopServiceLibrary", "FruitShopServiceLibrary\FruitShopServiceLibrary.csproj", "{FD68E03E-FB50-4C47-A381-D21F9EAD1E7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitShopHost", "FruitShopHost\FruitShopHost.csproj", "{129652C4-D7BC-4D6A-832D-019B9A39E865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitShopClient", "FruitShopClient\FruitShopClient.csproj", "{364877E0-2C04-4995-8BB3-DB4BB0DC7CF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD68E03E-FB50-4C47-A381-D21F9EAD1E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD68E03E-FB50-4C47-A381-D21F9EAD1E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD68E03E-FB50-4C47-A381-D21F9EAD1E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD68E03E-FB50-4C47-A381-D21F9EAD1E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{129652C4-D7BC-4D6A-832D-019B9A39E865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{129652C4-D7BC-4D6A-832D-019B9A39E865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{129652C4-D7BC-4D6A-832D-019B9A39E865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{129652C4-D7BC-4D6A-832D-019B9A39E865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{364877E0-2C04-4995-8BB3-DB4BB0DC7CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{364877E0-2C04-4995-8BB3-DB4BB0DC7CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{364877E0-2C04-4995-8BB3-DB4BB0DC7CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{364877E0-2C04-4995-8BB3-DB4BB0DC7CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

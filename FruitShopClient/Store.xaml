@@ -1,0 +1,33 @@
+﻿<Window x:Class="FruitShopClient.Store"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FruitShopClient"
+        mc:Ignorable="d"
+        Title="Store" Height="300" Width="500">
+    <Grid Background="MediumAquamarine">
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="24,20,0,0" Name="LoginHeading" Text="Store:" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed" RenderTransformOrigin="1.244,0.739"/>
+        <Grid HorizontalAlignment="Left" Height="170" Margin="30,55,0,0" VerticalAlignment="Top" Width="200" Background="White">
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Inventory" VerticalAlignment="Top" Height="20" Width="180"/>
+            <TextBlock Name="Inventory" HorizontalAlignment="Left" Margin="10,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="125" Width="180"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="170" Margin="260,55,0,0" VerticalAlignment="Top" Width="200" Background="White">
+            <ListBox Name="ProductListBox" HorizontalContentAlignment="Stretch">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,2">
+                            <TextBlock Text="{Binding ProductDetails.Name}" />
+                            <TextBlock Text="{Binding ProductDetails.Quantity}" HorizontalAlignment="Right" />
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="30,230,0,0" TextWrapping="Wrap" Text="Current budget:" VerticalAlignment="Top"/>
+        <TextBlock Name="Balance" HorizontalAlignment="Left" Margin="119,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Buy" HorizontalAlignment="Left" Margin="287,230,0,0" VerticalAlignment="Top" Width="75" Name="Buy" Click="Click_Buy"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" Margin="385,231,0,0" VerticalAlignment="Top" Width="75" Name="Refresh"  Click="Click_Refresh"/>
+    </Grid>
+</Window>

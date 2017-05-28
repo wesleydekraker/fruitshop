@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/FruitShopServiceLibrary/FruitShopService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" />
+  <xs:element name="GetAvailableProducts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="GetAvailableProductsResult" nillable="true" type="q1:ArrayOfProductType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="loginDetails" nillable="true" type="q2:LoginDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="RegisterUserResult" nillable="true" type="q3:Message" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="loginDetails" nillable="true" type="q4:LoginDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoginCustomerResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="loginDetails" nillable="true" type="q5:LoginDetails" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="productDetails" nillable="true" type="q6:ProductDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddProductResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuyProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="loginDetails" nillable="true" type="q7:LoginDetails" />
+        <xs:element minOccurs="0" name="productId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuyProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="BuyProductResult" nillable="true" type="q8:Message" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBoughtProducts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="loginDetails" nillable="true" type="q9:LoginDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBoughtProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="GetBoughtProductsResult" nillable="true" type="q10:ArrayOfOwnedProductType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBalance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="loginDetails" nillable="true" type="q11:LoginDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBalanceResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
