@@ -78,7 +78,7 @@ namespace FruitShopClient
                     Password = password
                 };
 
-                Message message = App.service.RegisterUser(loginDetails);
+                Message message = App.service.RegisterCustomer(loginDetails);
                 MessageBox.Show(message.Content);
             }
 

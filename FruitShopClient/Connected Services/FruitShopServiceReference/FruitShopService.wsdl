@@ -13,11 +13,11 @@
   <wsdl:message name="IFruitShopService_GetAvailableProducts_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAvailableProductsResponse" />
   </wsdl:message>
-  <wsdl:message name="IFruitShopService_RegisterUser_InputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterUser" />
+  <wsdl:message name="IFruitShopService_RegisterCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterCustomer" />
   </wsdl:message>
-  <wsdl:message name="IFruitShopService_RegisterUser_OutputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  <wsdl:message name="IFruitShopService_RegisterCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterCustomerResponse" />
   </wsdl:message>
   <wsdl:message name="IFruitShopService_LoginCustomer_InputMessage">
     <wsdl:part name="parameters" element="tns:LoginCustomer" />
@@ -54,9 +54,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IFruitShopService/GetAvailableProducts" message="tns:IFruitShopService_GetAvailableProducts_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IFruitShopService/GetAvailableProductsResponse" message="tns:IFruitShopService_GetAvailableProducts_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="RegisterUser">
-      <wsdl:input wsaw:Action="http://tempuri.org/IFruitShopService/RegisterUser" message="tns:IFruitShopService_RegisterUser_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IFruitShopService/RegisterUserResponse" message="tns:IFruitShopService_RegisterUser_OutputMessage" />
+    <wsdl:operation name="RegisterCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFruitShopService/RegisterCustomer" message="tns:IFruitShopService_RegisterCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFruitShopService/RegisterCustomerResponse" message="tns:IFruitShopService_RegisterCustomer_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="LoginCustomer">
       <wsdl:input wsaw:Action="http://tempuri.org/IFruitShopService/LoginCustomer" message="tns:IFruitShopService_LoginCustomer_InputMessage" />
@@ -90,8 +90,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="RegisterUser">
-      <soap:operation soapAction="http://tempuri.org/IFruitShopService/RegisterUser" style="document" />
+    <wsdl:operation name="RegisterCustomer">
+      <soap:operation soapAction="http://tempuri.org/IFruitShopService/RegisterCustomer" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

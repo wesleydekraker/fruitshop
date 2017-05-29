@@ -344,11 +344,11 @@ namespace FruitShopClient.FruitShopServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFruitShopService/GetAvailableProducts", ReplyAction="http://tempuri.org/IFruitShopService/GetAvailableProductsResponse")]
         System.Threading.Tasks.Task<FruitShopClient.FruitShopServiceReference.ProductType[]> GetAvailableProductsAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFruitShopService/RegisterUser", ReplyAction="http://tempuri.org/IFruitShopService/RegisterUserResponse")]
-        FruitShopClient.FruitShopServiceReference.Message RegisterUser(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFruitShopService/RegisterCustomer", ReplyAction="http://tempuri.org/IFruitShopService/RegisterCustomerResponse")]
+        FruitShopClient.FruitShopServiceReference.Message RegisterCustomer(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFruitShopService/RegisterUser", ReplyAction="http://tempuri.org/IFruitShopService/RegisterUserResponse")]
-        System.Threading.Tasks.Task<FruitShopClient.FruitShopServiceReference.Message> RegisterUserAsync(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFruitShopService/RegisterCustomer", ReplyAction="http://tempuri.org/IFruitShopService/RegisterCustomerResponse")]
+        System.Threading.Tasks.Task<FruitShopClient.FruitShopServiceReference.Message> RegisterCustomerAsync(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFruitShopService/LoginCustomer", ReplyAction="http://tempuri.org/IFruitShopService/LoginCustomerResponse")]
         bool LoginCustomer(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails);
@@ -416,12 +416,12 @@ namespace FruitShopClient.FruitShopServiceReference {
             return base.Channel.GetAvailableProductsAsync();
         }
         
-        public FruitShopClient.FruitShopServiceReference.Message RegisterUser(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails) {
-            return base.Channel.RegisterUser(loginDetails);
+        public FruitShopClient.FruitShopServiceReference.Message RegisterCustomer(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails) {
+            return base.Channel.RegisterCustomer(loginDetails);
         }
         
-        public System.Threading.Tasks.Task<FruitShopClient.FruitShopServiceReference.Message> RegisterUserAsync(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails) {
-            return base.Channel.RegisterUserAsync(loginDetails);
+        public System.Threading.Tasks.Task<FruitShopClient.FruitShopServiceReference.Message> RegisterCustomerAsync(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails) {
+            return base.Channel.RegisterCustomerAsync(loginDetails);
         }
         
         public bool LoginCustomer(FruitShopClient.FruitShopServiceReference.LoginDetails loginDetails) {

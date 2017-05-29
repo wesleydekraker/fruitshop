@@ -13,17 +13,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="RegisterUser">
+  <xs:element name="RegisterCustomer">
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="loginDetails" nillable="true" type="q2:LoginDetails" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="RegisterUserResponse">
+  <xs:element name="RegisterCustomerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="RegisterUserResult" nillable="true" type="q3:Message" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/FruitShopServiceLibrary" minOccurs="0" name="RegisterCustomerResult" nillable="true" type="q3:Message" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
